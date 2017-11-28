@@ -1,3 +1,6 @@
+You can use the startServer script to complete step 1 and 2. 
+./startServer.sh
+
 1. please start the rails server on hw3 using rails server. By default, it is on localhost:3000.
 
 2. Using python -m SimpleHTTPServer to start client side on client.html.
