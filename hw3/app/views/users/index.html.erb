@@ -1,0 +1,19 @@
+<p>Your API key is: <%=@user.APIkey%></p>
+
+<script type="text/javascript">
+                function show_confirm(){
+                  var r=confirm("Are you sure to delete your account!");
+                  if (r==true){
+                    var id = '<%=session["user_id"] %>'
+                    var xmlHttp = new XMLHttpRequest();
+                    xmlHttp.onreadystatechange = function() { // listen for state changes
+                      if (xmlHttp.readyState == 4 && xmlHttp.status == 200) { // when completed we can move away
+                      window.location = "/";
+                      }
+                    }
+                    xmlHttp.open("GET", "/users/delete/"+id, true); 
+                    xmlHttp.send();    
+                  }
+                }
+</script>
+<li><input type="button" onclick="show_confirm()" value="delete account" /></li>

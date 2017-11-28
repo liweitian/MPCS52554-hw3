@@ -1,0 +1,31 @@
+1. please start the rails server on hw3 using rails server. By default, it is on localhost:3000.
+
+2. Using python -m SimpleHTTPServer to start client side on client.html.
+By default, it is on localhost:8000.
+
+
+3. For the given 4 API functions. I suggest you to check using this manner. 
+We do not provide too much data in database at this time.
+
+Go to localhost:8000 and open the console. Input the following commands.
+
+1:var w = new WareHouse('bGxsamdsd3Q=')
+
+console.log(w)
+
+2:w.getAllItemsOfSeller()
+
+w.data
+
+3:w.getAnItemDetail('AB123')
+
+w.data
+
+4:w.sendRequest('AB123',1)
+
+w.response
+
+5:w.addNewItem('AB123',1)
+w.response
+
+If you sign up your own account, please choose abc1 as your seller. 

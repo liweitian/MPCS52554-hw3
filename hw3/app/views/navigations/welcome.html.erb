@@ -1,0 +1,26 @@
+  <div class="container">
+      <p>Welcome to our warehouse API server. Please sign up first and use your API key to access our service</p>
+      <p>After signning up successfully, you will be given a api key.</p>
+
+
+      <p>If the following statement to create your warehouse object</p>
+      <p>var warehouse = new WareHouse("APIKey")</p>
+      <p>If your API key is valid. warehouse.response will set to true</p>
+      <p>After you successfully create your warehouse object, you can access our service through the following four API functions</p>
+      <li>warehouse.getAllItemsOfSeller()</li>
+      <p>This will return all items' data belong to the seller that hired the developer</p>
+      <p>The returned data will be stored in warehouse.data.
+
+      <li>warehouse.getAnItemDetail(String sku)</li>
+      <p>This will return the specific item with the parameter sku</p>
+      <p>The returned data will be stored in warehouse.data.
+
+      <li>warehouse.sendRequest(String sku,int quantity)</li>
+      <p>This function is used when a customer want to buy "quantity" number of items with sku is "sku"</p>
+      <p>The returned data will be stored in warehouse.response</p>
+      
+      <li>warehouse.addNewItem(String sku, int quantity)</li>
+      <p>This function is used when the seller want to introduce new item and stored in the Warehouse</p>
+      <p>The returned data will be stored in warehouse.response</p>
+      
+  </div>

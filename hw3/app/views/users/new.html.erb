@@ -1,0 +1,28 @@
+<h2>Sign Up</h2>
+
+
+<%= form_tag "/users" do %>
+
+  <p>
+    <%= label_tag "account" %>
+    <%= text_field_tag "account", @user.account, autofocus: true %>
+  </p>
+
+  <p>
+    <%= label_tag "seller" %>
+    <%= text_field_tag "seller", @user.seller %>
+  </p>
+
+  <p>
+    <%= label_tag "password" %>
+    <%= password_field_tag "password", @user.password %>
+  </p>
+  <p>
+      <%= submit_tag "Sign Me Up", class: 'button' %>
+
+      or
+
+      <%= link_to "Cancel", "/" %>
+  </p>
+
+<% end %>

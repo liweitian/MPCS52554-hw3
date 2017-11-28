@@ -1,0 +1,16 @@
+User
+  seller: text
+  account: text
+  password: text
+  APIkey: text
+
+Seller
+  account: text
+  password: text
+
+Item
+  seller: text
+  sku: text
+  quantity: integer
+  status: text
+  location: text
