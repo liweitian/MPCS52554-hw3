@@ -70,7 +70,7 @@ var getAllItemWrapper = function(){
       }
     };
   //console.log(apiKey)
-  url = "http://localhost:3000/api/inventory/" + apiKey
+  url = "http://localhost:3000/api/inventory?apiKey=" + apiKey
   //console.log(url)
   xhttp.open("GET", url, true);
   xhttp.send();
@@ -89,7 +89,7 @@ var getItemDetailWrapper = function(sku){
         warehouse.data = xhttp.response;
       }
     };
-  xhttp.open("GET", "http://localhost:3000/api/inventory/"+apiKey+"/"+sku, true);
+  xhttp.open("GET", "http://localhost:3000/api/inventory/"+sku + "?apiKey="+apiKey, true);
   xhttp.send();
 }
 
