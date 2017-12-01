@@ -22,12 +22,16 @@ Go to localhost:8000/client.html and open the console. Input the following comma
 console.log(w)
 
 2:w.getAllItemsOfSeller()
-
 w.data
+
+You can also use curl to test 2 for example,
+curl -i localhost:3000/api/inventory?apiKey=bGxsamdsd3Q=
 
 3:w.getAnItemDetail('AB123')
-
 w.data
+
+You can also use curl to test 3 for example,
+curl -i localhost:3000/api/inventory/AB123?apiKey=bGxsamdsd3Q=
 
 4:w.sendRequest('AB123',1)
 w.response
