@@ -1,10 +1,12 @@
   <div class="container">
       <p>Hi grader, if you do not please read the readme file first</p>
       <p>Welcome to our warehouse API server. Please sign up first and use your API key to access our service</p>
-      <p>After signning up successfully, you will be given a api key.</p>
+      <p>After signning up successfully, you will be given a api key. You can delete your account by click the button delete</p>
+      <p>You can see the button after you log in</p>
 
-      <p>If the following statement to create your warehouse object</p>
+      <p>Using the following statement to create your warehouse object</p>
       <p>var warehouse = new WareHouse("APIKey")</p>
+
       <p>If your API key is valid. warehouse.response will set to true</p>
       <p>After you successfully create your warehouse object, you can access our service through the following four API functions</p>
       <li>warehouse.getAllItemsOfSeller()</li>
@@ -15,6 +17,7 @@
       <p>This will return the specific item with the parameter sku</p>
       <p>The returned data will be stored in warehouse.data.
 
+      <p>You can use the following two function to test the post request</p>
       <li>warehouse.sendRequest(String sku,int quantity)</li>
       <p>This function is used when a customer want to buy "quantity" number of items with sku is "sku"</p>
       <p>The returned data will be stored in warehouse.response</p>

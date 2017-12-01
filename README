@@ -2,7 +2,7 @@ You can use the startServer script to complete step 1 and 2.
 ./startServer.sh
 
 Note, sometimes the python server may start before the rails server finish booting.
-Hence, if you failed, please following step 1 and 2 to start the server side and client side 
+Hence, if you failed to import js code in rails server, please following step 1 and 2 to start the server side and client side 
 
 1. please start the rails server on hw3 using rails server. By default, it is on localhost:3000.
 
